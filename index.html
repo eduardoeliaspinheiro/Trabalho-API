@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cat Facts</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    #fact-container {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      max-width: 400px;
+      text-align: center;
+    }
+
+    #fact {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #007bff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    #facts-list {
+      margin-top: 20px;
+      text-align: left;
+      max-width: 400px;
+      background: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    #facts-ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    #facts-ul li {
+      margin-bottom: 10px;
+      color: #555;
+    }
+
+    #logs-list {
+      margin-top: 20px;
+      text-align: left;
+      max-width: 400px;
+      background: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    #logs-ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    #logs-ul li {
+      margin-bottom: 10px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <h1>Cat Facts</h1>
+  <div id="fact-container">
+    <p id="fact">Click the button to learn a fun cat fact!</p>
+    <button id="fetch-fact">Get a New Fact</button>
+  </div>
+
+  <div id="facts-list">
+    <h3>Saved Facts:</h3>
+    <ul id="facts-ul"></ul>
+  </div>
+
+  <div id="logs-list">
+    <h3>Logs:</h3>
+    <ul id="logs-ul"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
